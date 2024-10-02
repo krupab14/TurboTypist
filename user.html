@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="user-functions.js" defer></script>
+</head>
+<body>
+    <div class="table-container">
+        <!-- User Tables -->
+        <table id="KrupaTable" class="user-table" style="display: none;">
+            <caption>Krupa's Performance Data</caption>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Accuracy</th>
+                    <th>WPM</th>
+                    <th>CPS</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <table id="DharmilTable" class="user-table" style="display: none;">
+            <caption>Dharmil's Performance Data</caption>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Accuracy</th>
+                    <th>WPM</th>
+                    <th>CPS</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <table id="AnkitaTable" class="user-table" style="display: none;">
+            <caption>Ankita's Performance Data</caption>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Accuracy</th>
+                    <th>WPM</th>
+                    <th>CPS</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="button-container">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+</body>
+</html>

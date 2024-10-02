@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+    <link rel="stylesheet" href="./admin-styles.css">
+
+</head>
+<body>
+    <h2>User Profiles</h2>
+    <div class="form-container">
+   
+
+    <!-- Single Table to Display All User Information and Scores -->
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Username</th>
+            <th>Password</th> <!-- New Password Column -->
+            <th>Last Active Date</th>
+            <th>Accuracy</th>
+            <th>Words Per Minute (WPM)</th>
+            <th>Characters Per Second (CPS)</th>
+            <th>Actions</th> <!-- Column for Delete button -->
+        </tr>
+        <tr>
+            <td>Krupa</td>
+            <td>111</td> <!-- Example Password -->
+            <td>2024-09-27</td>
+            <td>98%</td>
+            <td>85 WPM</td>
+            <td>5.7</td>
+            <td><button onclick="deleteProfile(this)">Delete</button></td> <!-- Delete button -->
+        </tr>
+        <tr>
+            <td>Dharmil</td>
+            <td>222</td> <!-- Example Password -->
+            <td>2024-09-25</td>
+            <td>95%</td>
+            <td>78 WPM</td>
+            <td>5.2</td>
+            <td><button onclick="deleteProfile(this)">Delete</button></td> <!-- Delete button -->
+        </tr>
+        <tr>
+            <td>Ankita</td>
+            <td>333</td> <!-- Example Password -->
+            <td>2024-09-24</td>
+            <td>97%</td>
+            <td>88 WPM</td>
+            <td>6.0</td>
+            <td><button onclick="deleteProfile(this)">Delete</button></td> <!-- Delete button -->
+        </tr>
+    </table>
+</div>
+    
+
+    <script>
+        // Function to delete a profile row
+        function deleteProfile(button) {
+            const row = button.parentNode.parentNode; // Get the row of the button
+            row.remove(); // Remove the row
+        }
+    </script>
+
+</body>
+</html>
